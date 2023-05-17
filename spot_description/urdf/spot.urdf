@@ -1,0 +1,533 @@
+<?xml version="1.0" ?>
+<robot name="spot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="body">
+    <inertial>
+      <origin xyz="0.004809 0.000034 0.002237" rpy="0 0 0" />
+      <mass value="16.7025843015913" />
+      <inertia ixx="0.1065076385293" ixy="-0.000127647906668351" ixz="0.00752667851730235" iyy="0.9648051370927" iyz="0.0000531096236423339" izz="0.98848474008588" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/body.dae" />
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <origin xyz="0 0 0" rpy="1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/body_collision.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <!-- <link name="base_link"/>
+  <joint name="base_link_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="body" />
+    <child link="base_link" />
+  </joint>
+
+    <link name="front_rail"/>
+    <joint name="front_rail_joint" type="fixed">
+        <origin xyz="0.223 0 0.0805" rpy="0 0 0" />
+        <parent link="body" />
+        <child link="front_rail" />
+    </joint>
+
+    <link name="real_front_rail"/>
+    <joint name="real_front_rail_joint" type="fixed">
+        <origin xyz="0.2075 0 0.0805" rpy="0 0 0" />
+        <parent link="body" />
+        <child link="real_front_rail" />
+    </joint>
+
+    <link name="rear_rail"/>
+    <joint name="rear_rail_joint" type="fixed">
+        <origin xyz="-0.223 0 0.0805" rpy="0 0 0" />
+        <parent link="body" />
+        <child link="rear_rail" />
+    </joint>
+
+    <link name="real_rear_rail"/>
+    <joint name="real_rear_rail_joint" type="fixed">
+        <origin xyz="-0.415 0 0" rpy="0 0 0" />
+        <parent link="real_front_rail" />
+        <child link="real_rear_rail" />
+    </joint> -->
+
+  <link name="front_left_hip">
+    <inertial>
+      <origin xyz="-0.021594 0.011931 -0.000853" rpy="0 0 0" />
+      <mass value="0.756791487749432" />
+      <inertia ixx="0.00120774835817126" ixy="-0.000122325587269513" ixz="-0.0000122242990654206" iyy="0.00180646541108866" iyz="0.00000765567378125789" izz="0.00191790889429149" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_left_hip.dae" />
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_left_hip_collision.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <joint name="front_left_hip_roll" type="revolute">
+    <origin xyz="0.29785 0.05500 0.00000" rpy="1.570796326794897 0 0" />
+    <axis xyz="1 0 0" />
+    <parent link="body" />
+    <child link="front_left_hip" />
+    <limit lower="-0.78539816339744827899" upper="0.78539816339744827899" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-0.78539816339744827899" upper="0.78539816339744827899" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="front_left_hip_roll"/>
+    <actuator name="front_left_hip_roll"/>
+  </transmission>
+
+  <link name="front_left_upper_leg">
+    <inertial>
+      <origin xyz="0.002341 0.003056 -0.111288" rpy="0 0 0" />
+      						
+      <mass value="2.15112559989896" />
+      <inertia ixx="0.0311784567757009" ixy="-0.0000365696514271281" ixz="0.000852211227582723" iyy="0.0305503817883304" iyz="0.00124412700492549" izz="0.00387948042434958" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_left_upper_leg.dae" />
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_left_upper_leg_collision.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <joint name="front_left_hip_pitch" type="revolute">
+    <origin xyz="0.0 0.0 -0.11" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <parent link="front_left_hip" />
+    <child link="front_left_upper_leg" />
+    <limit lower="-2.460914245312005" upper="0.715584993317675" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-0.89884456477707963539" upper="2.2951079663725435509" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="front_left_hip_pitch"/>
+    <actuator name="front_left_hip_pitch"/>
+  </transmission>
+
+  <link name="front_left_lower_leg">
+    <inertial>
+      <origin xyz="0.006878 0.001493 -0.175910" rpy="0 0 0" />
+      					
+      <mass value="0.720139239706997" />
+      <inertia ixx="0.0110974644165193" ixy="0.0000000929211922202576" ixz="0.0000894882703965648" iyy="0.0112150355361202" iyz="-0.0000326101761808538" izz="0.000439925059989896" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_left_lower_leg.dae" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.0 -0.339 0.00225"/>
+      <geometry>
+        <sphere radius="0.033"/>
+      </geometry>
+      <material name="black">
+      	<color rgba="0.1 0.1 0.1 0.3" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_left_lower_leg_collision.obj" />
+      </geometry>
+    </collision> -->
+    <collision>
+      <origin xyz="0.0 -0.339 0.00225"/>
+      <geometry>
+        <sphere radius="0.033"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="front_left_knee" type="revolute">
+    <origin xyz="0.025 -0.319 0.0" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <parent link="front_left_upper_leg" />
+    <child link="front_left_lower_leg" />
+    <limit lower="0.244346095279206" upper="2.792526803190927" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-2.7929" upper="-0.254801" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="front_left_knee"/>
+    <actuator name="front_left_knee"/>
+  </transmission>
+
+  <frame link="front_left_lower_leg" name="front_left_foot_center" xyz="0.0 -0.339 0.00225"/>
+
+  <link name="front_right_hip">
+    <inertial>
+      <origin xyz="-0.021565 -0.012054 -0.000772" rpy="0 0 0" />
+      <mass value="0.756791487749432" />
+      <inertia ixx="0.00121337009030058" ixy="0.000122841816115181" ixz="-0.0000137316872947714" iyy="0.00180859743622127" iyz="-0.00000418145364991159" izz="0.00192084107413488" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_right_hip.dae" />
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_right_hip_collision.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <joint name="front_right_hip_roll" type="revolute">
+    <origin xyz="0.29785 -0.05500 0.00000" rpy="1.570796326794897 0 0" />
+    <axis xyz="1 0 0" />
+    <parent link="body" />
+    <child link="front_right_hip" />
+    <limit lower="-0.78539816339744827899" upper="0.78539816339744827899" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-0.78539816339744827899" upper="0.78539816339744827899" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="front_right_hip_roll"/>
+    <actuator name="front_right_hip_roll"/>
+  </transmission>
+
+  <link name="front_right_upper_leg">
+    <inertial>
+      <origin xyz="0.002254 -0.003185 -0.111253" rpy="0 0 0" />
+      <mass value="2.15112559989896" />
+      <inertia ixx="0.0311965454344531" ixy="0.0000380202544834554" ixz="0.000859582975498863" iyy="0.0305693170623895" iyz="-0.00127139421255368" izz="0.0038813130367517" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_right_upper_leg.dae" />
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_right_upper_leg_collision.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+    
+  <joint name="front_right_hip_pitch" type="revolute">
+    <origin xyz="0.0 0.0 0.11" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <parent link="front_right_hip" />
+    <child link="front_right_upper_leg" />
+    <limit lower="-2.460914245312005" upper="0.715584993317675" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-0.89884456477707963539" upper="2.2951079663725435509" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="front_right_hip_pitch"/>
+    <actuator name="front_right_hip_pitch"/>
+  </transmission>
+
+  <link name="front_right_lower_leg">
+    <inertial>
+      <origin xyz="0.006958 -0.002006 -0.175946" rpy="0 0 0" />
+      <mass value="0.720139239706997" />
+      <inertia ixx="0.0110986207691336" ixy="0.000000170355519070472" ixz="0.000087640171129073" iyy="0.0112165067883304" iyz="0.0000194050423086638" izz="0.000440276095604951" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_right_lower_leg.dae" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.0 -0.339 0.00225"/>
+      <geometry>
+        <sphere radius="0.033"/>
+      </geometry>
+      <material name="black">
+      	<color rgba="0.1 0.1 0.1 0.3" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/front_right_lower_leg_collision.obj" />
+      </geometry>
+    </collision> -->
+    <collision>
+      <origin xyz="0.0 -0.339 0.00225"/>
+      <geometry>
+        <sphere radius="0.033"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="front_right_knee" type="revolute">
+    <origin xyz="0.025 -0.319 0.0" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <parent link="front_right_upper_leg" />
+    <child link="front_right_lower_leg" />
+    <limit lower="0.244346095279206" upper="2.792526803190927" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-2.7929" upper="-0.247563" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="front_right_knee"/>
+    <actuator name="front_right_knee"/>
+  </transmission>
+
+  <frame link="front_right_lower_leg" name="front_right_foot_center" xyz="0.0 -0.339 0.00225"/>
+
+  <link name="rear_left_hip">
+    <inertial>
+      <origin xyz="0.021682 0.012004 -0.000661" rpy="0 0 0" />
+      <mass value="0.756791487749432" />
+      <inertia ixx="0.00122448449734782" ixy="0.000126729019323061" ixz="0.0000122191367769639" iyy="0.00181365647890882" iyz="0.000000836290729982319" izz="0.00193590463185148" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_left_hip.dae" />
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_left_hip_collision.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <joint name="rear_left_hip_roll" type="revolute">
+    <origin xyz="-0.29785 0.05500 0.00000" rpy="1.570796326794897 0 0" />
+    <axis xyz="1 0 0" />
+    <parent link="body" />
+    <child link="rear_left_hip" />
+    <limit lower="-0.78539816339744827899" upper="0.78539816339744827899" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-0.78539816339744827899" upper="0.78539816339744827899" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="rear_left_hip_roll"/>
+    <actuator name="rear_left_hip_roll"/>
+  </transmission>
+
+  <link name="rear_left_upper_leg">
+    <inertial>
+      <origin xyz="0.002219 0.002914 -0.111421" rpy="0 0 0" />
+      <mass value="2.15112559989896" />
+      <inertia ixx="0.031158313526143" ixy="-0.0000335239012376863" ixz="0.000868720226067189" iyy="0.0305423441052033" iyz="0.00119244733518565" izz="0.00386811822745643" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_left_upper_leg.dae" />
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_left_upper_leg_collision.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <joint name="rear_left_hip_pitch" type="revolute">
+    <origin xyz="0.0 0.0 -0.11" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <parent link="rear_left_hip" />
+    <child link="rear_left_upper_leg" />
+    <limit lower="-2.460914245312005" upper="0.715584993317675" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-0.89884456477707963539" upper="2.2951079663725435509" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="rear_left_hip_pitch"/>
+    <actuator name="rear_left_hip_pitch"/>
+  </transmission>
+
+  <link name="rear_left_lower_leg">
+    <inertial>
+      <origin xyz="0.006659 0.001625 -0.175832" rpy="0 0 0" />
+      						
+      <mass value="0.720139239706997" />
+      <inertia ixx="0.0110892254041425" ixy="-0.000000851777595352362" ixz="0.0000737587774690578" iyy="0.0112056246842637" iyz="0.00000427437484213185" izz="0.000438257640818388" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_left_lower_leg.dae" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.0 -0.339 0.00225"/>
+      <geometry>
+        <sphere radius="0.033"/>
+      </geometry>
+      <material name="black">
+      	<color rgba="0.1 0.1 0.1 0.3" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_left_lower_leg_collision.obj" />
+      </geometry>
+    </collision> -->
+    <collision>
+      <origin xyz="0.0 -0.339 0.00225"/>
+      <geometry>
+        <sphere radius="0.033"/>
+      </geometry>
+    </collision>
+  </link> 
+
+  <joint name="rear_left_knee" type="revolute">
+    <origin xyz="0.025 -0.319 0.0" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <parent link="rear_left_upper_leg" />
+    <child link="rear_left_lower_leg" />
+    <limit lower="0.244346095279206" upper="2.792526803190927" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-2.7929" upper="-0.267153" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="rear_left_knee"/>
+    <actuator name="rear_left_knee"/>
+  </transmission>
+
+  <frame link="rear_left_lower_leg" name="rear_left_foot_center" xyz="0.0 -0.339 0.00225"/>
+
+  <link name="rear_right_hip"> 
+    <inertial>
+      <origin xyz="0.021709 -0.011993 -0.000648" rpy="0 0 0" />
+      						
+      <mass value="0.756791487749432" />
+      <inertia ixx="0.00122605383303865" ixy="-0.000126889050265218" ixz="0.0000125598478151048" iyy="0.00181415205860066" iyz="-0.000000877589037635767" izz="0.0019359252810053" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_right_hip.dae" />
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <geometry>
+          <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_right_hip_collision.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <joint name="rear_right_hip_roll" type="revolute">
+    <origin xyz="-0.29785 -0.05500 0.00000" rpy="1.570796326794897 0 0" />
+    <axis xyz="1 0 0" />
+    <parent link="body" />
+    <child link="rear_right_hip" />
+    <limit lower="-0.78539816339744827899" upper="0.78539816339744827899" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-0.78539816339744827899" upper="0.78539816339744827899" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="rear_right_hip_roll"/>
+    <actuator name="rear_right_hip_roll"/>
+  </transmission>
+
+  <link name="rear_right_upper_leg">
+    <inertial>
+      <origin xyz="0.002229 -0.002974 -0.111411" rpy="0 0 0" />
+      <mass value="2.15112559989896" />
+      <inertia ixx="0.0311915535015155" ixy="0.0000351035615054307" ixz="0.000888037509472089" iyy="0.0305721408341753" iyz="-0.00121686495958575" izz="0.00387716771912099" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_right_upper_leg.dae" />
+      </geometry>
+    </visual>
+    <!-- <collision>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_right_upper_leg_collision.obj" />
+      </geometry>
+    </collision> -->
+  </link>
+
+  <joint name="rear_right_hip_pitch" type="revolute">
+    <origin xyz="0.0 0.0 0.11" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <parent link="rear_right_hip" />
+    <child link="rear_right_upper_leg" />
+    <limit lower="-2.460914245312005" upper="0.715584993317675" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-0.89884456477707963539" upper="2.2951079663725435509" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="rear_right_hip_pitch"/>
+    <actuator name="rear_right_hip_pitch"/>
+  </transmission>
+
+  <link name="rear_right_lower_leg">
+    <inertial>
+      <origin xyz="0.006799 -0.001949 -0.175935" rpy="0 0 0" />
+      <mass value="0.720139239706997" />
+      <inertia ixx="0.0111049652216469" ixy="0.000000438794518817883" ixz="0.0000764999526395554" iyy="0.0112211734970952" iyz="-0.00001322062073756" izz="0.000439155879009851" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0" rpy="-1.570796326794897 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_right_lower_leg.dae" />
+      </geometry>
+    </visual>
+    <visual>
+      <origin xyz="0.0 -0.339 0.00225"/>
+      <geometry>
+        <sphere radius="0.033"/>
+      </geometry>
+      <material name="black">
+      	<color rgba="0.1 0.1 0.1 0.3" />
+      </material>
+    </visual>
+    <!-- <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/spot_ros/spot_description/meshes/rear_right_lower_leg_collision.obj" />
+      </geometry>
+    </collision> -->
+    <collision>
+      <origin xyz="0.0 -0.339 0.00225"/>
+      <geometry>
+        <sphere radius="0.033"/>
+      </geometry>
+    </collision>
+  </link>
+
+
+  <joint name="rear_right_knee" type="revolute">
+    <origin xyz="0.025 -0.319 0.0" rpy="0 0 0" />
+    <axis xyz="0 0 1" />
+    <parent link="rear_right_upper_leg" />
+    <child link="rear_right_lower_leg" />
+    <limit lower="0.244346095279206" upper="2.792526803190927" />
+    <!-- <limit effort="1000" velocity="1000.00" lower="-2.7929" upper="-0.257725" /> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="rear_right_knee"/>
+    <actuator name="rear_right_knee"/>
+  </transmission>
+  
+  <frame link="rear_right_lower_leg" name="rear_right_foot_center" xyz="0.0 -0.339 0.00225"/>
+    
+  <!-- Standard accessories. 
+  <xacro:include filename="$(find spot_description)/urdf/accessories.urdf.xacro" /> -->
+
+  <!-- Optional custom includes. 
+  <xacro:include filename="$(optenv SPOT_URDF_EXTRAS empty.urdf)" /> -->
+</robot>

@@ -1,0 +1,267 @@
+<?xml version="1.0" ?>
+<robot name="spot_arm" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  <link name="arm_base">
+    <inertial>
+      <origin xyz="0.0	0.0	0.0325005" rpy="0 0 0"/>
+      <mass value="8.4470803421374E-01"/>
+      <inertia ixx="1.05642448858263E-03" ixy="0.0" ixz="0.0" iyy="1.05642448858263E-03" iyz="0.0" izz="1.51803384389596E-03"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/arm_base.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/arm_base.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+     </collision>
+  </link>
+
+  <!-- <joint name="arm_base" type="fixed">
+    <origin xyz="0.29 0.0 0.11" rpy="1.570796326794897 0 0" />
+    <parent link="body" />
+    <child link="arm_base" />
+  </joint> -->
+
+ <link name="shoulder">
+    <inertial>
+      <origin xyz="0.050693264 0.000000002 0.111764267" rpy="0 0 0"/>
+      <mass value="1.01412247519236E+00"/>
+      <inertia ixx="1.8154556264852E-03" ixy="6.32940438316485E-11" ixz="-1.53051526788674E-04" iyy="1.5196014291069E-03" iyz="8.54782331794787E-11" izz="1.79976798912846E-03"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0599 0.074 0.0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/shoulder.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0599 0.074 0.0" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/shoulder.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="shoulder_roll" type="revolute">
+    <origin xyz="0.0 0.0 0.0" rpy="0 1.570796326794897 0"/>
+    <parent link="arm_base"/>
+    <child link="shoulder"/>
+    <axis xyz="0.0 -1.0 0.0"/>
+    <limit lower="0.0" upper="5.759586531581288"/>
+    <!-- <limit effort="100" lower="-3.141593" upper="2.617994" velocity="100"/> -->
+  </joint>
+
+  <transmission type="SimpleTransmission" name="shoulder_roll_force">
+    <joint name="shoulder_roll"/>
+    <actuator name="shoulder_roll"/>
+  </transmission>
+
+  <link name="upper_arm">
+    <inertial>
+      <origin xyz="-0.001309559 0.175409149	0.115000" rpy="0 0 0"/>
+      <mass value="1.85585420216174E+00"/>
+      <inertia ixx="1.90287856174162E-02" ixy="3.84903415743162E-04" ixz="-5.46907983164896E-12" iyy="1.47198770403943E-03" iyz="4.09998257343947E-10" izz="1.8985160167362E-02"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0 -0.14" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/upper_arm.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 -0.14" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/upper_arm.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="shoulder_pitch" type="revolute">
+    <origin xyz="0.0 0.09 0.0" rpy="0 0 0"/>
+    <!-- <origin xyz="0.0 0.13 -0.02" rpy="0 0 0"/> -->
+    <parent link="shoulder"/>
+    <child link="upper_arm"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <limit lower="0.0" upper="3.665191429188092"/>
+    <!-- <limit effort="100" lower="-3.665191429188092" upper="0.0" velocity="100"/> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="shoulder_pitch"/>
+    <actuator name="shoulder_pitch"/>
+  </transmission>
+
+  <link name="elbow">
+    <inertial>
+      <origin xyz="0.001378161	0.379156586	0.056925724" rpy="0 0 0"/>
+      <mass value="1.08030731359557E+00"/>
+      <inertia ixx="2.6497702614337E-03" ixy="1.34200112163595E-04" ixz="-1.48060133875651E-04" iyy="1.72847446122508E-03" iyz="5.46631591493253E-04" izz="2.44406598769231E-03"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.0 -0.07 -0.09" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/elbow.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.0 -0.07 -0.09" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/elbow.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="elbow_pitch" type="revolute">
+    <origin xyz="0.0 0.0 -0.32" rpy="3.141592653589793 0 0"/>
+    <parent link="upper_arm"/>
+    <child link="elbow"/>
+    <axis xyz="-1.0 0.0 0.0"/>
+    <limit lower="0.0" upper="3.141592653589793"/>
+    <!-- <limit effort="100" lower="0.0" upper="2.96706" velocity="100"/> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="elbow_pitch"/>
+    <actuator name="elbow_pitch"/>
+  </transmission>
+
+  <link name="lower_arm">
+    <inertial>
+      <origin xyz="-0.010117033	0.576546326	0.047500" rpy="0 0 0"/>
+      <mass value="1.60548660664662E+00"/>
+      <inertia ixx="9.78987060807806E-03" ixy="1.75547490481279E-03" ixz="-3.22983323437141E-11" iyy="2.19771041837686E-03" iyz="1.32854267071776E-09" izz="1.054641984655E-02"/>
+    </inertial>
+    <visual>
+      <origin xyz="-0.014473 -0.0 -0.198" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/lower_arm.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="-0.014473 -0.0 -0.198" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/lower_arm.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="lower_arm_roll" type="revolute">
+    <origin xyz="0.0015 -0.0825 -0.125" rpy="0 0 1.570796326794897"/>
+    <parent link="elbow"/>
+    <child link="lower_arm"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit lower="-2.792526803190927" upper="2.792526803190927"/>
+    <!-- <limit effort="100" lower="-2.879793" upper="2.879793" velocity="100"/> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="lower_arm_roll"/>
+    <actuator name="lower_arm_roll"/>
+  </transmission>
+
+  <link name="wrist">
+    <inertial>
+      <origin xyz="-0.008954922	0.733331	0.047502666" rpy="0 0 0"/>
+      <mass value="4.72269042472257E-01"/>
+      <inertia ixx="4.95333466649268E-04" ixy="-3.16192719166953E-06" ixz="6.12242158042143E-09" iyy="3.27482191989288E-04" iyz="-7.57843702187199E-09" izz="5.02611482968939E-04"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.036052 0.0 0.015" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/wrist.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.036052 0.0 0.015" rpy="0 0 0"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/wrist.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wrist_pitch" type="revolute">
+    <origin xyz="-0.0474 0.0 -0.26" rpy="0 0 0"/>
+    <parent link="lower_arm"/>
+    <child link="wrist"/>
+    <axis xyz="1.0 0.0 0.0"/>
+    <limit lower="-1.570796326794897" upper="1.570796326794897"/>
+    <!-- <limit effort="100" lower="-1.570796326794897" upper="1.570796326794897" velocity="100"/> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="wrist_pitch"/>
+    <actuator name="wrist_pitch"/>
+  </transmission>
+
+  <link name="gripper">
+    <inertial>
+      <origin xyz="-0.008500081	0.850122681	0.064628716" rpy="0 0 0"/>
+      <mass value="8.76161639389477E-01"/>
+      <inertia ixx="2.52491911897022E-03" ixy="4.13484121739019E-10" ixz="2.38079372470107E-10" iyy="1.07566861895342E-03" iyz="-5.67240232531871E-04" izz="2.24194546034942E-03"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.00104 0.001921 -0.022094" rpy="0 0 -1.570796326794897"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/gripper.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0.00104 0.001921 -0.022094" rpy="0 0 -1.570796326794897"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/gripper.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="wrist_roll" type="revolute">
+    <origin xyz="0.04 0.0 -0.064" rpy="0 0 0"/>
+    <parent link="wrist"/>
+    <child link="gripper"/>
+    <axis xyz="0.0 0.0 1.0"/>
+    <limit lower="-2.879793265790644" upper="2.879793265790644"/>
+    <!-- <limit effort="100" lower="-2.96706" upper="2.96706" velocity="100"/> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="wrist_roll"/>
+    <actuator name="wrist_roll"/>
+  </transmission>
+
+  <link name="finger">
+    <inertial>
+      <origin xyz="-0.013500088	0.922123901	0.027004997" rpy="0 0 0"/>
+      <mass value="2.51090686328227E-01"/>
+      <inertia ixx="3.12126309344984E-04" ixy="3.16526931057423E-10" ixz="7.02242238704263E-11" iyy="2.46474508241264E-04" iyz="2.36998538690293E-05" izz="4.99008659201307E-04"/>
+    </inertial>
+    <visual>
+      <origin xyz="0 0.0 -0.073" rpy="0 0 -1.570796326794897"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/finger.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0.0 -0.073" rpy="0 0 -1.570796326794897"/>
+      <geometry>
+        <mesh filename="file:///Users/namirjawdat/Projects/underactuatedFinalProject/spot_ros/spot_description/meshes/arm/finger.obj" scale="0.001 0.001 0.001"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="finger_pitch" type="revolute">
+    <origin xyz="0 0 -0.04" rpy="0 -0.174532925199433 0"/>
+    <parent link="gripper"/>
+    <child link="finger"/>
+    <axis xyz="0.0 1.0 0.0"/>
+    <limit lower="0" upper="1.570796326794897"/>
+    <!-- <limit effort="100" lower="-1.396263" upper="0.349066" velocity="100"/> -->
+  </joint>
+
+  <transmission type="SimpleTransmission">
+    <joint name="finger_pitch"/>
+    <actuator name="finger_pitch"/>
+  </transmission>
+</robot>

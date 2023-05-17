@@ -1,0 +1,597 @@
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/body_collision.stl in 54 msec
+All files opened in 12403 msec
+Mesh Bounding Box Size 0.891661 0.256298 0.213814
+Mesh Bounding Box Diag 0.952084 
+Mesh Bounding Box min -0.439462 -0.128193 -0.110848
+Mesh Bounding Box max 0.452199 0.128105 0.102967
+Mesh Surface Area is 0.664435
+Mesh Total Len of 480 Edges is 42.933323 Avg Len 0.089444
+Mesh Total Len of 480 Edges is 42.933323 Avg Len 0.089444 (including faux edges))
+Thin shell (faces) barycenter: 0.004359 -0.000190 0.002689
+Vertices barycenter 0.024308 -0.000504 0.003932
+Mesh Volume is 0.032355
+Center of Mass is 0.004809 0.000034 0.002237
+Inertia Tensor is :
+| 0.000206 -0.000000 0.000015 |
+| -0.000000 0.001869 0.000000 |
+| 0.000015 0.000000 0.001915 |
+Principal axes are :
+| -0.999964 -0.000149 0.008533 |
+| -0.000168 0.999998 -0.002190 |
+| -0.008533 -0.002191 -0.999961 |
+axis momenta are :
+| 0.000206 0.001869 0.001915 |
+Applied filter Compute Geometric Measures in 124 msec
+
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/front_left_hip_collision.stl in 63 msec
+All files opened in 1587 msec
+Mesh Bounding Box Size 0.160897 0.119915 0.113471
+Mesh Bounding Box Diag 0.230528 
+Mesh Bounding Box min -0.104639 -0.048168 -0.056985
+Mesh Bounding Box max 0.056258 0.071747 0.056486
+Mesh Surface Area is 0.067661
+Mesh Total Len of 480 Edges is 11.327541 Avg Len 0.023599
+Mesh Total Len of 480 Edges is 11.327541 Avg Len 0.023599 (including faux edges))
+Thin shell (faces) barycenter: -0.022277 0.011663 -0.000909
+Vertices barycenter -0.014119 0.011841 -0.022541
+Mesh Volume is 0.001457
+Center of Mass is -0.021594 0.011931 -0.000853
+Inertia Tensor is :
+| 0.000002 -0.000000 -0.000000 |
+| -0.000000 0.000003 0.000000 |
+| -0.000000 0.000000 0.000004 |
+Principal axes are :
+| 0.981189 0.192515 0.014329 |
+| 0.189799 -0.975575 0.110588 |
+| -0.035268 0.105788 0.993763 |
+axis momenta are :
+| 0.000002 0.000004 0.000004 |
+Applied filter Compute Geometric Measures in 135 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/front_left_lower_leg_collision.stl in 65 msec
+All files opened in 1578 msec
+Started Mode Manipulators Tool
+Started Mode Manipulators Tool
+Mesh Bounding Box Size 0.092754 0.065750 0.444809
+Mesh Bounding Box Diag 0.459109 
+Mesh Bounding Box min -0.044502 -0.031889 -0.380865
+Mesh Bounding Box max 0.048252 0.033861 0.063944
+Mesh Surface Area is 0.096527
+Mesh Total Len of 480 Edges is 19.715765 Avg Len 0.041075
+Mesh Total Len of 480 Edges is 19.715765 Avg Len 0.041075 (including faux edges))
+Thin shell (faces) barycenter: 0.006088 0.001513 -0.171658
+Vertices barycenter 0.003687 0.001206 -0.150430
+Mesh Volume is 0.001394
+Center of Mass is 0.006878 0.001493 -0.175910
+Inertia Tensor is :
+| 0.000021 0.000000 0.000000 |
+| 0.000000 0.000022 -0.000000 |
+| 0.000000 -0.000000 0.000001 |
+Principal axes are :
+| -0.008396 0.003026 0.999960 |
+| -0.999964 -0.001537 -0.008391 |
+| -0.001512 0.999994 -0.003039 |
+axis momenta are :
+| 0.000001 0.000021 0.000022 |
+Applied filter Compute Geometric Measures in 204 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/front_left_upper_leg_collision.stl in 68 msec
+All files opened in 1472 msec
+Mesh Bounding Box Size 0.120837 0.150546 0.437765
+Mesh Bounding Box Diag 0.478439 
+Mesh Bounding Box min -0.060566 -0.083720 -0.354052
+Mesh Bounding Box max 0.060271 0.066826 0.083713
+Mesh Surface Area is 0.164744
+Mesh Total Len of 480 Edges is 21.279751 Avg Len 0.044333
+Mesh Total Len of 480 Edges is 21.279751 Avg Len 0.044333 (including faux edges))
+Thin shell (faces) barycenter: 0.003339 0.003175 -0.122148
+Vertices barycenter 0.004270 0.002347 -0.138621
+Mesh Volume is 0.004166
+Center of Mass is 0.002341 0.003056 -0.111288
+Inertia Tensor is :
+| 0.000060 -0.000000 0.000002 |
+| -0.000000 0.000059 0.000002 |
+| 0.000002 0.000002 0.000008 |
+Principal axes are :
+| -0.031135 -0.046470 0.998434 |
+| -0.005182 0.998913 0.046331 |
+| -0.999502 -0.003732 -0.031342 |
+axis momenta are :
+| 0.000007 0.000059 0.000060 |
+Applied filter Compute Geometric Measures in 118 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/front_right_hip_collision.stl in 64 msec
+All files opened in 1826 msec
+Mesh Bounding Box Size 0.161003 0.119848 0.113535
+Mesh Bounding Box Diag 0.230599 
+Mesh Bounding Box min -0.104615 -0.071658 -0.056918
+Mesh Bounding Box max 0.056388 0.048190 0.056617
+Mesh Surface Area is 0.067698
+Mesh Total Len of 480 Edges is 11.347711 Avg Len 0.023641
+Mesh Total Len of 480 Edges is 11.347711 Avg Len 0.023641 (including faux edges))
+Thin shell (faces) barycenter: -0.022264 -0.011768 -0.000828
+Vertices barycenter -0.014318 -0.011568 -0.022546
+Mesh Volume is 0.001459
+Center of Mass is -0.021565 -0.012054 -0.000772
+Inertia Tensor is :
+| 0.000002 0.000000 -0.000000 |
+| 0.000000 0.000004 -0.000000 |
+| -0.000000 -0.000000 0.000004 |
+Principal axes are :
+| 0.980795 -0.194272 0.017288 |
+| 0.192445 0.978347 0.076167 |
+| 0.031711 0.071378 -0.996945 |
+axis momenta are :
+| 0.000002 0.000004 0.000004 |
+Applied filter Compute Geometric Measures in 64 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/front_right_lower_leg_collision.stl in 62 msec
+All files opened in 1687 msec
+Mesh Bounding Box Size 0.092807 0.065790 0.444794
+Mesh Bounding Box Diag 0.459112 
+Mesh Bounding Box min -0.044464 -0.034645 -0.380806
+Mesh Bounding Box max 0.048344 0.031145 0.063989
+Mesh Surface Area is 0.096618
+Mesh Total Len of 480 Edges is 19.723186 Avg Len 0.041090
+Mesh Total Len of 480 Edges is 19.723186 Avg Len 0.041090 (including faux edges))
+Thin shell (faces) barycenter: 0.006160 -0.002032 -0.171732
+Vertices barycenter 0.003748 -0.001652 -0.150376
+Mesh Volume is 0.001395
+Center of Mass is 0.006958 -0.002006 -0.175946
+Inertia Tensor is :
+| 0.000021 0.000000 0.000000 |
+| 0.000000 0.000022 0.000000 |
+| 0.000000 0.000000 0.000001 |
+Principal axes are :
+| -0.008222 -0.001800 0.999965 |
+| -0.999962 0.002834 -0.008217 |
+| 0.002819 0.999994 0.001824 |
+axis momenta are :
+| 0.000001 0.000022 0.000022 |
+Applied filter Compute Geometric Measures in 194 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/front_right_upper_leg_collision.stl in 57 msec
+All files opened in 1679 msec
+Mesh Bounding Box Size 0.120749 0.150661 0.437695
+Mesh Bounding Box Diag 0.478389 
+Mesh Bounding Box min -0.060593 -0.066885 -0.353878
+Mesh Bounding Box max 0.060156 0.083777 0.083817
+Mesh Surface Area is 0.164752
+Mesh Total Len of 480 Edges is 21.265551 Avg Len 0.044303
+Mesh Total Len of 480 Edges is 21.265551 Avg Len 0.044303 (including faux edges))
+Thin shell (faces) barycenter: 0.003253 -0.003307 -0.122085
+Vertices barycenter 0.004150 -0.002402 -0.138601
+Mesh Volume is 0.004167
+Center of Mass is 0.002254 -0.003185 -0.111253
+Inertia Tensor is :
+| 0.000060 0.000000 0.000002 |
+| 0.000000 0.000059 -0.000002 |
+| 0.000002 -0.000002 0.000008 |
+Principal axes are :
+| -0.031384 0.047451 0.998380 |
+| 0.004765 0.998868 -0.047325 |
+| -0.999496 0.003272 -0.031574 |
+axis momenta are :
+| 0.000007 0.000059 0.000060 |
+Applied filter Compute Geometric Measures in 137 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/lidar_mount_collision.stl in 61 msec
+All files opened in 1440 msec
+Mesh Bounding Box Size 0.394905 0.223621 0.061376
+Mesh Bounding Box Diag 0.457955 
+Mesh Bounding Box min -0.197452 -0.111810 -0.061376
+Mesh Bounding Box max 0.197452 0.111810 0.000000
+Mesh Surface Area is 0.196441
+Mesh Total Len of 30 Edges is 6.366948 Avg Len 0.212232
+Mesh Total Len of 30 Edges is 6.366948 Avg Len 0.212232 (including faux edges))
+Thin shell (faces) barycenter: 0.000000 -0.000000 -0.044501
+Vertices barycenter 0.000000 -0.000000 -0.038972
+Mesh Volume is 0.002877
+Center of Mass is 0.000000 -0.000000 -0.039833
+Inertia Tensor is :
+| 0.000009 0.000000 0.000000 |
+| 0.000000 0.000025 -0.000000 |
+| 0.000000 -0.000000 0.000033 |
+Principal axes are :
+| 1.000000 -0.000000 -0.000000 |
+| -0.000000 -1.000000 -0.000000 |
+| -0.000000 0.000000 -1.000000 |
+axis momenta are :
+| 0.000009 0.000025 0.000033 |
+Applied filter Compute Geometric Measures in 181 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/rear_left_hip_collision.stl in 70 msec
+All files opened in 1411 msec
+Mesh Bounding Box Size 0.161232 0.119756 0.113463
+Mesh Bounding Box Diag 0.230675 
+Mesh Bounding Box min -0.056623 -0.048056 -0.056999
+Mesh Bounding Box max 0.104609 0.071700 0.056464
+Mesh Surface Area is 0.067891
+Mesh Total Len of 480 Edges is 11.251767 Avg Len 0.023441
+Mesh Total Len of 480 Edges is 11.251767 Avg Len 0.023441 (including faux edges))
+Thin shell (faces) barycenter: 0.022270 0.011795 -0.000598
+Vertices barycenter 0.013381 0.011983 -0.022746
+Mesh Volume is 0.001465
+Center of Mass is 0.021682 0.012004 -0.000661
+Inertia Tensor is :
+| 0.000002 0.000000 0.000000 |
+| 0.000000 0.000004 0.000000 |
+| 0.000000 0.000000 0.000004 |
+Principal axes are :
+| 0.979332 -0.201626 -0.015993 |
+| 0.201002 0.979000 -0.034026 |
+| -0.022517 -0.030108 -0.999293 |
+axis momenta are :
+| 0.000002 0.000004 0.000004 |
+Applied filter Compute Geometric Measures in 128 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/rear_left_lower_leg_collision.stl in 70 msec
+All files opened in 1330 msec
+Mesh Bounding Box Size 0.093052 0.065747 0.444856
+Mesh Bounding Box Diag 0.459214 
+Mesh Bounding Box min -0.045037 -0.031148 -0.380862
+Mesh Bounding Box max 0.048015 0.034600 0.063994
+Mesh Surface Area is 0.096407
+Mesh Total Len of 480 Edges is 19.721642 Avg Len 0.041087
+Mesh Total Len of 480 Edges is 19.721642 Avg Len 0.041087 (including faux edges))
+Thin shell (faces) barycenter: 0.005892 0.001604 -0.171568
+Vertices barycenter 0.003507 0.001256 -0.150329
+Mesh Volume is 0.001392
+Center of Mass is 0.006659 0.001625 -0.175832
+Inertia Tensor is :
+| 0.000021 -0.000000 0.000000 |
+| -0.000000 0.000022 0.000000 |
+| 0.000000 0.000000 0.000001 |
+Principal axes are :
+| -0.006925 -0.000397 0.999976 |
+| -0.999951 -0.007107 -0.006927 |
+| -0.007109 0.999975 0.000348 |
+axis momenta are :
+| 0.000001 0.000021 0.000022 |
+Applied filter Compute Geometric Measures in 136 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/rear_left_upper_leg_collision.stl in 72 msec
+All files opened in 1604 msec
+Mesh Bounding Box Size 0.120910 0.150718 0.437748
+Mesh Bounding Box Diag 0.478496 
+Mesh Bounding Box min -0.060808 -0.083720 -0.354112
+Mesh Bounding Box max 0.060102 0.066999 0.083636
+Mesh Surface Area is 0.164701
+Mesh Total Len of 480 Edges is 21.275423 Avg Len 0.044324
+Mesh Total Len of 480 Edges is 21.275423 Avg Len 0.044324 (including faux edges))
+Thin shell (faces) barycenter: 0.003222 0.003006 -0.122282
+Vertices barycenter 0.004193 0.002148 -0.138690
+Mesh Volume is 0.004163
+Center of Mass is 0.002219 0.002914 -0.111421
+Inertia Tensor is :
+| 0.000060 -0.000000 0.000002 |
+| -0.000000 0.000059 0.000002 |
+| 0.000002 0.000002 0.000007 |
+Principal axes are :
+| -0.031746 -0.044542 0.998503 |
+| -0.008844 0.998980 0.044282 |
+| -0.999457 -0.007425 -0.032107 |
+axis momenta are :
+| 0.000007 0.000059 0.000060 |
+Applied filter Compute Geometric Measures in 66 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/rear_right_hip_collision.stl in 68 msec
+All files opened in 1420 msec
+Mesh Bounding Box Size 0.161473 0.119726 0.113468
+Mesh Bounding Box Diag 0.230831 
+Mesh Bounding Box min -0.056833 -0.071610 -0.056959
+Mesh Bounding Box max 0.104640 0.048116 0.056508
+Mesh Surface Area is 0.067900
+Mesh Total Len of 480 Edges is 11.265675 Avg Len 0.023470
+Mesh Total Len of 480 Edges is 11.265675 Avg Len 0.023470 (including faux edges))
+Thin shell (faces) barycenter: 0.022267 -0.011793 -0.000587
+Vertices barycenter 0.013250 -0.011994 -0.022712
+Mesh Volume is 0.001466
+Center of Mass is 0.021709 -0.011993 -0.000648
+Inertia Tensor is :
+| 0.000002 -0.000000 0.000000 |
+| -0.000000 0.000004 -0.000000 |
+| 0.000000 -0.000000 0.000004 |
+Principal axes are :
+| 0.979212 0.202172 -0.016462 |
+| 0.201501 -0.978847 -0.035434 |
+| 0.023278 -0.031380 0.999236 |
+axis momenta are :
+| 0.000002 0.000004 0.000004 |
+Applied filter Compute Geometric Measures in 59 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/rear_right_lower_leg_collision.stl in 71 msec
+All files opened in 1223 msec
+Mesh Bounding Box Size 0.093021 0.065800 0.444816
+Mesh Bounding Box Diag 0.459177 
+Mesh Bounding Box min -0.044854 -0.035114 -0.380964
+Mesh Bounding Box max 0.048168 0.030687 0.063852
+Mesh Surface Area is 0.096473
+Mesh Total Len of 480 Edges is 19.719624 Avg Len 0.041083
+Mesh Total Len of 480 Edges is 19.719624 Avg Len 0.041083 (including faux edges))
+Thin shell (faces) barycenter: 0.006039 -0.001944 -0.171690
+Vertices barycenter 0.003640 -0.001519 -0.150438
+Mesh Volume is 0.001394
+Center of Mass is 0.006799 -0.001949 -0.175935
+Inertia Tensor is :
+| 0.000022 0.000000 0.000000 |
+| 0.000000 0.000022 -0.000000 |
+| 0.000000 -0.000000 0.000001 |
+Principal axes are :
+| -0.007172 0.001226 0.999974 |
+| -0.999970 0.002984 -0.007176 |
+| 0.002993 0.999995 -0.001205 |
+axis momenta are :
+| 0.000001 0.000022 0.000022 |
+Applied filter Compute Geometric Measures in 189 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/rear_right_upper_leg_collision.stl in 64 msec
+All files opened in 1313 msec
+Mesh Bounding Box Size 0.120823 0.150525 0.437816
+Mesh Bounding Box Diag 0.478475 
+Mesh Bounding Box min -0.060774 -0.066817 -0.354062
+Mesh Bounding Box max 0.060049 0.083708 0.083754
+Mesh Surface Area is 0.164742
+Mesh Total Len of 480 Edges is 21.272707 Avg Len 0.044318
+Mesh Total Len of 480 Edges is 21.272707 Avg Len 0.044318 (including faux edges))
+Thin shell (faces) barycenter: 0.003239 -0.003072 -0.122225
+Vertices barycenter 0.004149 -0.002292 -0.138640
+Mesh Volume is 0.004166
+Center of Mass is 0.002229 -0.002974 -0.111411
+Inertia Tensor is :
+| 0.000060 0.000000 0.000002 |
+| 0.000000 0.000059 -0.000002 |
+| 0.000002 -0.000002 0.000008 |
+Principal axes are :
+| -0.032420 0.045412 0.998442 |
+| 0.008910 0.998941 -0.045146 |
+| -0.999435 0.007432 -0.032790 |
+axis momenta are :
+| 0.000007 0.000059 0.000060 |
+Applied filter Compute Geometric Measures in 140 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/velo_collision.stl in 67 msec
+All files opened in 1463 msec
+Mesh Bounding Box Size 0.126820 0.126820 0.085936
+Mesh Bounding Box Diag 0.198876 
+Mesh Bounding Box min -0.063410 -0.063410 0.000000
+Mesh Bounding Box max 0.063410 0.063410 0.085936
+Mesh Surface Area is 0.059285
+Mesh Total Len of 266 Edges is 14.555696 Avg Len 0.054721
+Mesh Total Len of 266 Edges is 14.555696 Avg Len 0.054721 (including faux edges))
+Thin shell (faces) barycenter: -0.000000 0.000000 0.042968
+Vertices barycenter -0.000000 0.000000 0.042968
+Mesh is not 'watertight', no information on volume, barycenter and inertia tensor.
+Principal axes are :
+| -0.999977 0.006835 0.000000 |
+| 0.006835 0.999977 -0.000000 |
+| 0.000000 0.000000 1.000000 |
+Applied filter Compute Geometric Measures in 52 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/velodyne_cage.stl in 62 msec
+All files opened in 1322 msec
+Mesh Bounding Box Size 122.875000 122.875000 85.937500
+Mesh Bounding Box Diag 193.860214 
+Mesh Bounding Box min -61.500000 -61.500000 0.002500
+Mesh Bounding Box max 61.375000 61.375000 85.940002
+Mesh Surface Area is 26603.181641
+Mesh Total Len of 2946 Edges is 23499.326172 Avg Len 7.976689
+Mesh Total Len of 2946 Edges is 23499.326172 Avg Len 7.976689 (including faux edges))
+Thin shell (faces) barycenter: -0.062505 -0.062501 60.473419
+Vertices barycenter -0.062500 -0.062501 53.364635
+Mesh Volume is 53348.167969
+Center of Mass is -0.062504 -0.062501 66.282166
+Inertia Tensor is :
+| 88548080.000000 1.000625 -3.428099 |
+| 1.000625 88548080.000000 1.147858 |
+| -3.428099 1.147858 120228080.000000 |
+Principal axes are :
+| 0.070253 -0.997529 0.000000 |
+| -0.997529 -0.070253 -0.000000 |
+| 0.000000 -0.000000 -1.000000 |
+axis momenta are :
+| 88548096.000000 88548112.000000 120228072.000000 |
+Applied filter Compute Geometric Measures in 109 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/arm/base_link.stl in 73 msec
+All files opened in 1377 msec
+Mesh Bounding Box Size 120.000000 120.000000 65.000000
+Mesh Bounding Box Diag 181.727814 
+Mesh Bounding Box min -60.000000 -60.000000 0.000000
+Mesh Bounding Box max 60.000000 60.000000 65.000000
+Mesh Surface Area is 47077.726562
+Mesh Total Len of 378 Edges is 18843.675781 Avg Len 49.850994
+Mesh Total Len of 378 Edges is 18843.675781 Avg Len 49.850994 (including faux edges))
+Thin shell (faces) barycenter: -0.000000 0.000000 32.499992
+Vertices barycenter 0.000000 0.000000 32.500000
+Mesh Volume is 733952.375000
+Center of Mass is 0.000000 0.000000 32.500000
+Inertia Tensor is :
+| 917909184.000000 0.000000 0.000000 |
+| 0.000000 917909184.000000 0.000000 |
+| 0.000000 0.000000 1318993664.000000 |
+Principal axes are :
+| 1.000000 0.000000 0.000000 |
+| 0.000000 1.000000 -0.000000 |
+| 0.000000 0.000000 1.000000 |
+axis momenta are :
+| 917909248.000000 917909248.000000 1318993664.000000 |
+Applied filter Compute Geometric Measures in 137 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/arm/finger.stl in 58 msec
+All files opened in 1311 msec
+Mesh Bounding Box Size 95.000000 150.000000 45.000000
+Mesh Bounding Box Diag 183.166595 
+Mesh Bounding Box min -61.000095 831.090149 9.414621
+Mesh Bounding Box max 33.999905 981.090149 54.414619
+Mesh Surface Area is 36840.886719
+Mesh Total Len of 228 Edges is 7535.934570 Avg Len 33.052345
+Mesh Total Len of 228 Edges is 7535.934570 Avg Len 33.052345 (including faux edges))
+Thin shell (faces) barycenter: -13.500093 906.070801 28.713116
+Vertices barycenter -13.500096 904.962585 39.836430
+Mesh Volume is 218168.406250
+Center of Mass is -13.500088 922.123901 27.004997
+Inertia Tensor is :
+| 271201216.000000 275.024841 61.016628 |
+| 275.024841 214157488.000000 20592398.000000 |
+| 61.016628 20592398.000000 433580096.000000 |
+Principal axes are :
+| -0.000006 0.995700 -0.092634 |
+| 1.000000 0.000006 -0.000001 |
+| -0.000001 -0.092634 -0.995700 |
+axis momenta are :
+| 212241744.000000 271197504.000000 435497888.000000 |
+Applied filter Compute Geometric Measures in 102 msec
+
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/arm/gripper.stl in 63 msec
+All files opened in 21049 msec
+Mesh Bounding Box Size 75.000084 184.000000 95.000000
+Mesh Bounding Box Diag 220.240799 
+Mesh Bounding Box min -46.000095 779.590149 9.914621
+Mesh Bounding Box max 28.999989 963.590149 104.914619
+Mesh Surface Area is 61380.500000
+Mesh Total Len of 315 Edges is 9190.743164 Avg Len 29.176964
+Mesh Total Len of 315 Edges is 9190.743164 Avg Len 29.176964 (including faux edges))
+Thin shell (faces) barycenter: -8.500093 858.663269 67.236893
+Vertices barycenter -7.460284 801.683594 49.378277
+Mesh Volume is 761281.875000
+Center of Mass is -8.500081 850.122681 64.628716
+Inertia Tensor is :
+| 2193859072.000000 359.269287 206.863098 |
+| 359.269287 934630080.000000 -492865344.000000 |
+| 206.863098 -492865344.000000 1947988096.000000 |
+Principal axes are :
+| -0.000000 0.926503 0.376288 |
+| -0.000001 0.376288 -0.926503 |
+| 1.000000 0.000001 -0.000001 |
+axis momenta are :
+| 734458880.000000 2148170752.000000 2193893376.000000 |
+Applied filter Compute Geometric Measures in 61 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/arm/link1.stl in 81 msec
+All files opened in 1326 msec
+Mesh Bounding Box Size 161.000000 120.000000 95.000000
+Mesh Bounding Box Diag 222.139603 
+Mesh Bounding Box min -60.000000 -60.000000 65.000000
+Mesh Bounding Box max 101.000000 60.000000 160.000000
+Mesh Surface Area is 66719.015625
+Mesh Total Len of 1566 Edges is 23818.205078 Avg Len 15.209581
+Mesh Total Len of 1566 Edges is 23818.205078 Avg Len 15.209581 (including faux edges))
+Thin shell (faces) barycenter: 35.258461 0.000001 102.380722
+Vertices barycenter 59.711700 0.000000 106.299431
+Mesh Volume is 881153.687500
+Center of Mass is 50.693264 0.000002 111.764267
+Inertia Tensor is :
+| 1577418368.000000 54.995113 -132983856.000000 |
+| 54.995113 1320355712.000000 74.270576 |
+| -132983856.000000 74.270576 1563787648.000000 |
+Principal axes are :
+| 0.000001 -1.000000 0.000001 |
+| -0.688773 -0.000001 -0.724977 |
+| 0.724977 -0.000000 -0.688773 |
+axis momenta are :
+| 1320355968.000000 1437444608.000000 1703761664.000000 |
+Applied filter Compute Geometric Measures in 104 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/arm/link2.stl in 64 msec
+All files opened in 1255 msec
+Mesh Bounding Box Size 75.000000 386.000000 70.000000
+Mesh Bounding Box Diag 399.400787 
+Mesh Bounding Box min -36.000000 -30.000000 80.000000
+Mesh Bounding Box max 39.000000 356.000000 150.000000
+Mesh Surface Area is 110612.000000
+Mesh Total Len of 54 Edges is 6052.235840 Avg Len 112.078445
+Mesh Total Len of 54 Edges is 6052.235840 Avg Len 112.078445 (including faux edges))
+Thin shell (faces) barycenter: -1.387770 169.488754 115.000000
+Vertices barycenter 3.000000 147.000000 115.000000
+Mesh Volume is 1612520.000000
+Center of Mass is -1.309559 175.409149 115.000000
+Inertia Tensor is :
+| 16533786624.000000 334436000.000000 -4.751990 |
+| 334436000.000000 1278984960.000000 356.240479 |
+| -4.751990 356.240479 16495881216.000000 |
+Principal axes are :
+| -0.021908 0.999760 0.000000 |
+| 0.000000 0.000000 -1.000000 |
+| 0.999760 0.021908 0.000000 |
+axis momenta are :
+| 1271655808.000000 16495883264.000000 16541119488.000000 |
+Applied filter Compute Geometric Measures in 183 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/arm/link3.stl in 71 msec
+All files opened in 1347 msec
+Mesh Bounding Box Size 90.000000 165.000000 135.000000
+Mesh Bounding Box Diag 231.408722 
+Mesh Bounding Box min -46.000000 285.500000 10.000000
+Mesh Bounding Box max 44.000000 450.500000 145.000000
+Mesh Surface Area is 72597.773438
+Mesh Total Len of 240 Edges is 12745.572266 Avg Len 53.106552
+Mesh Total Len of 240 Edges is 12745.572266 Avg Len 53.106552 (including faux edges))
+Thin shell (faces) barycenter: -1.076979 369.868683 67.884949
+Vertices barycenter -2.354295 413.428589 59.928265
+Mesh Volume is 938660.562500
+Center of Mass is 1.378161 379.156586 56.925724
+Inertia Tensor is :
+| 2302340096.000000 116604184.000000 -128646920.000000 |
+| 116604184.000000 1501841920.000000 474958848.000000 |
+| -128646920.000000 474958848.000000 2123607168.000000 |
+Principal axes are :
+| -0.150010 0.866149 -0.476741 |
+| -0.833468 -0.370162 -0.410258 |
+| 0.531816 -0.335805 -0.777436 |
+axis momenta are :
+| 1220223232.000000 2290797824.000000 2416770048.000000 |
+Applied filter Compute Geometric Measures in 190 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/arm/link4.stl in 63 msec
+All files opened in 1164 msec
+Mesh Bounding Box Size 123.000000 285.000000 75.000000
+Mesh Bounding Box Diag 319.341522 
+Mesh Bounding Box min -86.500000 450.500000 10.000000
+Mesh Bounding Box max 36.500000 735.500000 85.000000
+Mesh Surface Area is 94272.906250
+Mesh Total Len of 138 Edges is 8156.354004 Avg Len 59.104012
+Mesh Total Len of 138 Edges is 8156.354004 Avg Len 59.104012 (including faux edges))
+Thin shell (faces) barycenter: -15.245234 586.076416 47.499992
+Vertices barycenter -15.472967 648.497070 47.500000
+Mesh Volume is 1394979.875000
+Center of Mass is -10.117033 576.546326 47.500000
+Inertia Tensor is :
+| 8506251264.000000 1525302144.000000 -28.063469 |
+| 1525302144.000000 1909553024.000000 1154.348022 |
+| -28.063469 1154.348022 9163603968.000000 |
+Principal axes are :
+| 0.214887 -0.976639 -0.000000 |
+| 0.976639 0.214887 0.000000 |
+| 0.000000 0.000000 -1.000000 |
+axis momenta are :
+| 1573945216.000000 8841903104.000000 9163624448.000000 |
+Applied filter Compute Geometric Measures in 125 msec
+
+Opened mesh /home/namir/Projects/spot_ros/spot_description/meshes/arm/wrist.stl in 71 msec
+All files opened in 1622 msec
+Mesh Bounding Box Size 77.485764 96.000000 74.997894
+Mesh Bounding Box Diag 144.377029 
+Mesh Bounding Box min -48.500000 683.590149 10.000000
+Mesh Bounding Box max 28.985762 779.590149 84.997894
+Mesh Surface Area is 29846.154297
+Mesh Total Len of 2424 Edges is 21403.025391 Avg Len 8.829631
+Mesh Total Len of 2424 Edges is 21403.025391 Avg Len 8.829631 (including faux edges))
+Thin shell (faces) barycenter: -9.445967 734.966003 47.500969
+Vertices barycenter -12.447560 700.555847 47.522137
+Mesh Volume is 410346.500000
+Center of Mass is -8.954922 733.331360 47.502666
+Inertia Tensor is :
+| 430386784.000000 -2747344.500000 5319.667480 |
+| -2747344.500000 284543680.000000 -6584.774414 |
+| 5319.667480 -6584.774414 436710528.000000 |
+Principal axes are :
+| -0.018828 -0.999823 -0.000041 |
+| -0.999822 0.018828 0.000868 |
+| 0.000867 -0.000058 1.000000 |
+axis momenta are :
+| 284491968.000000 430438752.000000 436707200.000000 |
+Applied filter Compute Geometric Measures in 75 msec
+
